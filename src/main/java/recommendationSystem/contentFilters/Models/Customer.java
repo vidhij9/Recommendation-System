@@ -15,7 +15,7 @@ import java.util.List;
 @Component
 public class Customer {
   List<MovieRating> watchedListWithRating;
-  List<Recommendations> recommendationsList;
+  Recommendations recommendationsList;
   List<Interests> interestList;
   private Long id;
   private String name;
