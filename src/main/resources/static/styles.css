@@ -1,0 +1,136 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6fb;
+    color: #1f2933;
+}
+
+body {
+    margin: 0;
+}
+
+.app-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.form-section, .shipments-section, .timeline-section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+input, select, button {
+    padding: 0.65rem;
+    border-radius: 8px;
+    border: 1px solid #d1d9e6;
+    font-size: 1rem;
+}
+
+button {
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.shipments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#shipments-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#shipments-table th, #shipments-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#shipments-table tbody tr {
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+#shipments-table tbody tr:hover {
+    background: #eff6ff;
+}
+
+.timeline-item {
+    border-left: 3px solid #2563eb;
+    margin-left: 0.5rem;
+    padding: 0.75rem 1rem;
+    position: relative;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.95rem;
+    top: 1rem;
+    width: 0.65rem;
+    height: 0.65rem;
+    background: #2563eb;
+    border-radius: 50%;
+}
+
+.timeline-item h4 {
+    margin: 0 0 0.35rem 0;
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #e2e8f0;
+}
+
+.feedback {
+    font-size: 0.9rem;
+    min-height: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.feedback.error {
+    color: #b91c1c;
+}
+
+.feedback.success {
+    color: #047857;
+}
